@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>상품 소개 페이지</title>
+  <link rel="stylesheet" href="css/poster.css">
+  <style>
+    .video-container {
+      position: relative;
+      width: 800px; /* 영상의 너비와 동일하게 조정 */
+    }
+
+    .video-container video {
+      width: 100%; /* 영상이 부모 요소에 꽉 차게 */
+    }
+
+    .text-overlay {
+      position: absolute;
+      top: 50%; /* 영상의 세로 중앙으로 이동 */
+      left: 50%; /* 영상의 가로 중앙으로 이동 */
+      transform: translate(-50%, -50%); /* 가운데 정렬 */
+      color: white; /* 텍스트 색상 설정 */
+      font-size: 24px; /* 텍스트 크기 설정 */
+    }
+  </style>
+</head>
+<body>
+  <div class="video-container">
+    <video src="medias/Dinosaur.mp4" autoplay muted loop></video>
+    <div class="text-overlay">
+      Mesozoic Eden Park, shall we enter?
+    </div>
+  </div>
+</body>
+</html>
